@@ -8,6 +8,12 @@ The Objective of the project is to modify the facial expression of an input imag
 
 <img src="https://github.com/charan250498/Latent-Code-Editting-for-Facial-Expression-Modification/blob/main/img/inputoutput.png" width="350">
 
+### Dataset Used
+
+FFHQ 128x128 thumbnails Dataset: [Link](https://drive.google.com/drive/folders/1tg-Ur7d4vk1T8Bn0pPpUSQPxlPGBlGfv)
+
+FFHQ Features Dataset: [Github Link](https://github.com/DCGM/ffhq-features-dataset)
+
 ### Workflow
 
 <img src="https://github.com/charan250498/Latent-Code-Editting-for-Facial-Expression-Modification/blob/main/img/workflow.jpg">
@@ -25,7 +31,7 @@ You can make use of the ```FacialExpressionModifier.ipynb``` file to sample imag
 ### Training Boundaries
 
 ```
-python .\utils\train_boundary.py -o data/fear_neutral_stylegan_w_boundary -c data/fear_neutral.npy -s data/fear_neutral_scores.npy --chosen_num_or_ratio 0.2
+python .\utils\find_boundary.py -o data/fear_neutral_stylegan_w_boundary -c data/fear_neutral.npy -s data/fear_neutral_scores.npy --chosen_num_or_ratio 0.2
 ```
 
 For this to work you need to have your latent codes and latent code classes or scores in ```.npy``` formats.
