@@ -20,7 +20,7 @@ Download the model from the above link and save it under the ```models/pretrain`
 
 Boundaries for latent code editing in the ```expresssion_boundaries``` directory.
 
-You can also make use of the ```FacialExpressionModifier.ipynb``` file to sample image and modify the facial expresssion.\
+You can make use of the ```FacialExpressionModifier.ipynb``` file to sample image and modify the facial expresssion.
 
 ### Training Boundaries
 
